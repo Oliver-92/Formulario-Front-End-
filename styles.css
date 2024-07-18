@@ -1,0 +1,46 @@
+body {
+    max-width: 500px;
+    margin: 5px auto;
+    background-color: rgb(50, 40, 90);
+    color: rgb(200, 200, 200);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#title,
+p {
+    margin: 15px auto;
+    text-align: center;
+}
+
+fieldset {
+    background-color: rgb(35, 20, 70);
+}
+
+label {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin: 3px auto;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+#submit {
+    display: block;
+    width: 70%;
+    margin: 1rem auto;
+    background-color: rgb(35, 20, 70);
+    color: rgb(200, 200, 200);
+    border: 1px solid black;
+    height: 2.5em;
+    font-size: 1.1rem;
+}

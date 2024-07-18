@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Encuesta Tech</h1>
+    <p id="description">Gracias por tomarse el tiempo de llenar esta encuesta!</p>
+    <form id="survey-form" action="">
+        <fieldset>
+            <label id="name-label" for="name">Nombre<input type="text" id="name" placeholder="Ingrese su nombre.." required></label>
+            <label for="lastname">Apellido<input type="text" id="lastname" placeholder="Ingrese su apellido.." required></label>
+            <label id="email-label" for="email">Email<input type="email" id="email" placeholder="example@gmail.com" required></label>
+            <label id="number-label" for="number">Edad<input type="number" id="number" placeholder="Ingrese su edad.." min="13" max="70"></label>
+        </fieldset>
+        <fieldset>
+          <legend>¿Qué opción describe mejor su función actual?</legend>
+            <label for="dropdown">
+                <select name="dropdown" id="dropdown">
+                    <option value="">Elige una opción</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trabajor medio tiempo</option>
+                    <option value="3">Trabajador full-time</option>
+                    <option value="4">Prefiero no decir</option>
+                    <option value="5">Otro</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>¿Recomendarías nuestra plataforma a un amigo?</legend>
+            <label for="reco1"><input id="reco1" type="radio" name="recomend" class="inline" value="Definitivamente" checked> Definitivamente</label>
+            <label for="reco2"><input id="reco2" type="radio" name="recomend" class="inline" value="Tal vez"> Tal vez</label>
+            <label for="reco3"><input id="reco3" type="radio" name="recomend" class="inline" value="No estoy seguro"> No estoy seguro</label>
+        </fieldset>
+        <fieldset>
+            <legend>¿Cuáles son tus áreas de interés</legend>
+            <label for="front"><input id="front" name="front" type="checkbox" class="inline" value="1">Front-end</label>
+            <label for="back"><input id="back" name="back" type="checkbox" class="inline" value="1">Back-end</label>
+            <label for="data"><input id="data" name="data" type="checkbox" class="inline" value="1">Data analytics</label>
+            <label for="ml"><input id="ml" name="ml" type="checkbox" class="inline" value="1">Machine learning</label>
+            <label for="dis"><input id="dis" name="dis" type="checkbox" class="inline" value="1">Diseño</label>
+        </fieldset>
+        <fieldset>
+        <legend>Comentarios adicionales:</legend><label     for="coments"><textarea name="coments" id="coments" rows="4" cols="40" placeholder="Escribe aquí tus comentarios.."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" name="submit" id="submit" value="Enviar">
+    </form>
+</body>
+</html>
